@@ -1,11 +1,14 @@
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode (int val) {
-        this.val = val;
-    }
-}
-class Solution {
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode (int val) {
+ *         this.val = val;
+ *     }
+ * }
+ */
+class ConvertBinaryNumberLinkedListToInteger {
     public int getDecimalValue(ListNode head) {
         ListNode current = head;
         int count = 0;
