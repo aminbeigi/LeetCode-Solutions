@@ -9,6 +9,8 @@
  * }
  */
  public class LinkedListCycle {
+    // time complexity: O(n)
+    // space complexity: O(1)
     public boolean hasCycle(ListNode head) {
         if (head == null){
             return false;
