@@ -8,7 +8,7 @@
  *     }
  * }
  */
- public class LinkedListCycle {
+ public class Solution {
     // time complexity: O(n)
     // space complexity: O(1)
     public boolean hasCycle(ListNode head) {

@@ -8,7 +8,7 @@
  *     }
  * }
  */
-class ConvertBinaryNumberLinkedListToInteger {
+class Solution {
     // time complexity: O(n)
     // space complexity: O(1)
     public int getDecimalValue(ListNode head) {

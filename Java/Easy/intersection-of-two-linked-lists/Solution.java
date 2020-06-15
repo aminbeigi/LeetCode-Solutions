@@ -8,7 +8,7 @@
  *     }
  * }
  */
- class IntersectionOfTwoLinkedLists {
+ class Solution {
     // time complexity: O(n + m)
     // space complexity: O(1)
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {

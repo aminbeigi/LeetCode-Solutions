@@ -8,7 +8,7 @@
  *     }
  * }
  */
-class ReverseLinkedList {
+class Solution {
     // time complexity: O(n)
     // space complexity: O(n)
     public ListNode reverseList(ListNode head) {
