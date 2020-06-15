@@ -9,6 +9,9 @@
  * }
  */
 public class Solution {
+    // solution using two pointers
+    // time complexity: O(n)
+    // spcae complexity: O(1)
     public ListNode detectCycle(ListNode head) {
         if (head == null) {
             return null;
@@ -21,7 +24,11 @@ public class Solution {
         while (fast != null && fast.next != null) {
             fast = fast.next.next;
             slow = slow.next;
-            // slow and fast meeting up
+            /*
+            * reset slow pointer to head node
+            * when pointers meet on two objects that point to the same memory location 
+            * is always the intersection node
+            */
             if (fast == slow) {
                 slow = head;
                 while (fast != slow) {
@@ -34,7 +41,9 @@ public class Solution {
         return null;
     }
 
-
+    // solution storing nodes inside an IdentityHashMap
+    // time complexity: O(n)
+    // space complexity O(n)
     public ListNode detectCycle2(ListNode head) {
         ListNode current = head;
         IdentityHashMap<ListNode, Boolean> nodesSeen = new IdentityHashMap<>();
