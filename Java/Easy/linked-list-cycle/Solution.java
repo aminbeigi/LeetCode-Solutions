@@ -15,7 +15,7 @@
         if (head == null){
             return false;
         }
-        // Floyd's cycle-detection algortihm
+        // Floyd's cycle detection algortihm
         ListNode fast = head;
         ListNode slow = head;
         while (fast != null && fast.next != null) {
