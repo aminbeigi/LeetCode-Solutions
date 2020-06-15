@@ -9,9 +9,24 @@
  * }
  */
 class Solution {
+    // two pointer solution
+    // time complexity: O(n)
+    // space complexity: O(1)
+    public ListNode reverseList(ListNode head) {
+    ListNode prev = null;
+    ListNode current = head;
+    while (current != null) {
+        ListNode nextTemp = current.next;
+        current.next = prev;
+        prev = current;
+        current = nextTemp;
+    }
+    return prev;
+}
+    // HashMap solution
     // time complexity: O(n)
     // space complexity: O(n)
-    public ListNode reverseList(ListNode head) {
+    public ListNode reverseList2(ListNode head) {
         ListNode current = head;
         int count = 0;
         
