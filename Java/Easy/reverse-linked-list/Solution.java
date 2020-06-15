@@ -23,6 +23,7 @@ class Solution {
     }
     return prev;
 }
+    
     // HashMap solution
     // time complexity: O(n)
     // space complexity: O(n)
