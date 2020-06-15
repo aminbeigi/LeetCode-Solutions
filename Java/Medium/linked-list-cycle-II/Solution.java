@@ -9,7 +9,7 @@
  * }
  */
 public class Solution {
-    // solution using two pointers
+    // two pointer solution
     // time complexity: O(n)
     // spcae complexity: O(1)
     public ListNode detectCycle(ListNode head) {
@@ -41,7 +41,7 @@ public class Solution {
         return null;
     }
 
-    // solution storing nodes inside an IdentityHashMap
+    // IdentityHashMap solution
     // time complexity: O(n)
     // space complexity O(n)
     public ListNode detectCycle2(ListNode head) {
