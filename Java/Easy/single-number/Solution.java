@@ -1,6 +1,6 @@
 class Solution {
-	// time complexity: O(n)
-	// space complexity: O(n)
+    // time complexity: O(n)
+    // space complexity: O(n)
     public int singleNumber(int[] nums) {
         HashSet<Integer> set = new HashSet<>();
         for (int i = 0; i < nums.length; ++i) {
