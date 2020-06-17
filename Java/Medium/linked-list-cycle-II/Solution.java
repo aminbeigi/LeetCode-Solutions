@@ -43,7 +43,7 @@ public class Solution {
 
     // IdentityHashMap solution
     // time complexity: O(n)
-    // space complexity O(n)
+    // space complexity: O(n)
     public ListNode detectCycle2(ListNode head) {
         ListNode current = head;
         IdentityHashMap<ListNode, Boolean> nodesSeen = new IdentityHashMap<>();
