@@ -1,6 +1,6 @@
 class Solution {
     // bitwise operator XOR solution
-    // time complexity: O(1)
+    // time complexity: O(n)
     // space complexity: O(1)
 	    public int singleNumber(int[] nums) {
         int n = 0;
