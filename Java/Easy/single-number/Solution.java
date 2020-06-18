@@ -1,5 +1,5 @@
 class Solution {
-	// bitwise operator XOR solution
+    // bitwise operator XOR solution
     // time complexity: O(1)
     // space complexity: O(1)
 	    public int singleNumber(int[] nums) {
@@ -9,7 +9,8 @@ class Solution {
         }
         return n;
     }
-	// HashSet solution
+	
+    // HashSet solution
     // time complexity: O(n)
     // space complexity: O(n)	
     public int singleNumber2(int[] nums) {
