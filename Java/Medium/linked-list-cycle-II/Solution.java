@@ -11,7 +11,7 @@
 public class Solution {
     // two pointer solution
     // time complexity: O(n)
-    // spcae complexity: O(1)
+    // space complexity: O(1)
     public ListNode detectCycle(ListNode head) {
         if (head == null) {
             return null;
