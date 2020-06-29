@@ -25,4 +25,3 @@ class Solution {
         return set.iterator().next();
     }
 }
- 
