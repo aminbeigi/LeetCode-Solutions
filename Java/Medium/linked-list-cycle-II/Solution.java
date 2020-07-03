@@ -26,8 +26,7 @@ public class Solution {
             slow = slow.next;
             /*
             * reset slow pointer to head node
-            * when pointers meet on two objects that point to the same memory location 
-            * is always the intersection node
+            * when pointers meet on two references to same object
             */
             if (fast == slow) {
                 slow = head;
