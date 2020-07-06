@@ -8,7 +8,7 @@
 </br>
 
 ## Description
-This repo contains some of my solutions from LeetCode.   
+This repo contains my solutions to LeetCode problems.   
 Language currently used are **Python** and **Java**.
 
 ## Profile Page
