@@ -3,7 +3,6 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
-
 class Solution:
     # time complexity: O(n)
     # space complexity: O(1)
