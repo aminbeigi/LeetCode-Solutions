@@ -9,3 +9,4 @@ class Solution:
             if (complement in my_dict):
                 return [my_dict[complement], i]            
             my_dict[number] = i 
+            
