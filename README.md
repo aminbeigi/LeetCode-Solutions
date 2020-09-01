@@ -9,7 +9,7 @@
 
 ## Description
 This repo contains my solutions to LeetCode problems.   
-Language currently used are **Python** and **Java**.
+Language currently used are **C++**, **Python** and **Java**.
 
 ## Profile Page
 You can find my profile page here:  
