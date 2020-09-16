@@ -16,7 +16,7 @@ public:
         }
 
         for (int i = 14; i < n; i += 15) {
-            vec[i] = "Fizz" + vec[i];
+            vec[i] = "FizzBuzz";
         }
         
         return vec;
