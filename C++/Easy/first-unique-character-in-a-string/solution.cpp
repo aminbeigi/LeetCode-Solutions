@@ -12,8 +12,7 @@ public:
         }
         return -1;
     }
-    
-    
+  
     int firstUniqChar2(string s) { 
         unordered_map<char, int> m;
         
@@ -38,5 +37,4 @@ public:
         
         return output;
     } 
-    
 };
