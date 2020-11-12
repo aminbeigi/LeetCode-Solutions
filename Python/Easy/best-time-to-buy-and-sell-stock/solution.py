@@ -5,17 +5,13 @@ class Solution:
     def maxProfit(self, prices):
         if (len(prices) == 0):
             return 0
-
         profit = 0
         lowest = prices[0]
-
         for current in prices[1:]:              
             if ((current - lowest) > profit):
                 profit = current - lowest
             if (lowest > current):
                 lowest = current
-
-        print(profit)
         return profit
 
     # brute force solution
@@ -27,7 +23,6 @@ class Solution:
             for sell in prices[index:]:
                 if ((sell - buy) > profit):
                     profit = sell - buy
-        print(profit)
         return profit
 
 test = Solution()
