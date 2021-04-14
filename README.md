@@ -9,7 +9,7 @@
 
 ## Description
 This repo contains my solutions to LeetCode problems.   
-Main languages used are **Python** and **C**.
+Main language used is **Python** beacause **Python** is awesome.
 
 ## Profile Page
 You can find my profile page here:  
@@ -17,3 +17,4 @@ https://leetcode.com/aminbeigi/
 
 ## Licence
 Free to use.
+
