@@ -9,7 +9,6 @@
 
 ## Description
 This repo contains my solutions to LeetCode problems.   
-Main language used is **Python** beacause **Python** is awesome.
 
 ## Profile Page
 You can find my profile page here:  
