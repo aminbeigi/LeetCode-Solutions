@@ -33,8 +33,8 @@ bool isPalindrome(struct ListNode* head) {
         if (head->val != slow->val) {
             return false;
         }
-        head=head->next;
-        slow=slow->next;
+        head = head->next;
+        slow = slow->next;
     }
     return true;
 }
