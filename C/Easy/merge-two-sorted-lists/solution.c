@@ -14,9 +14,10 @@ struct ListNode* createNode(int val);
  * time complexity: O(n+m)
  * space complexity: O(1)
 */
-struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2){
+struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2) {
     struct ListNode* dummy = createNode(-1);
     struct ListNode* last = dummy;
+
     while (l1 != NULL && l2 != NULL) {
         if (l1->val < l2->val) {
             last->next = l1;
@@ -28,6 +29,7 @@ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2){
             l2 = l2->next;
         }
     }
+
     if (l1 != NULL) {
         last->next = l1;
     }
