@@ -7,7 +7,7 @@ struct ListNode {
     struct ListNode *next;
 };
 
-struct ListNode* reverseList(struct ListNode* head);
+static struct ListNode* reverseList(struct ListNode* head);
 
 /*
  * reverse solution
@@ -39,7 +39,7 @@ bool isPalindrome(struct ListNode* head) {
     return true;
 }
 
-struct ListNode* reverseList(struct ListNode* head) {
+static struct ListNode* reverseList(struct ListNode* head) {
     struct ListNode* tmp;
     struct ListNode* prev = NULL;
     struct ListNode* curr = head;

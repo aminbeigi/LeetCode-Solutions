@@ -7,7 +7,7 @@ struct ListNode {
     struct ListNode *next;
 };
 
-struct ListNode* createNode(int val);
+static struct ListNode* createNode(int val);
 
 /*
  * iterative solution
@@ -41,7 +41,7 @@ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2) {
     return dummy->next;
 }
 
-struct ListNode* createNode(int val) {
+static struct ListNode* createNode(int val) {
     struct ListNode* node = malloc(sizeof(struct ListNode));
     node->val = val;
     node->next = NULL;
