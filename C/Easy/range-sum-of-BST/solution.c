@@ -12,15 +12,12 @@ struct TreeNode {
  * space complexity: O(n)
 */
 int rangeSumBST(struct TreeNode* root, int low, int high){
-    if (root == NULL) {
-        return 0;
-    }
+    if (root == NULL) return 0;
 
-    if (root->val < low) {
-        return rangeSumBST(root->right, low, high);
-    
-    } else if (root->val > high) {
+    if (high < root->val) {
         return rangeSumBST(root->left, low, high);
+    } else if (low > root->val) {
+        return rangeSumBST(root->right, low, high);
     }
 
     return rangeSumBST(root->left, low, high) + rangeSumBST(root->right, low, high) + root->val;
