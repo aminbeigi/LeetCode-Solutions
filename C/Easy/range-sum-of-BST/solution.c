@@ -35,7 +35,6 @@ int rangeSumBST2(struct TreeNode* root, int low, int high){
 
     if (root->val >= low && root->val <= high) {
         return rangeSumBST(root->left, low, high) + rangeSumBST(root->right, low, high) + root->val;
-
     } else {
         return rangeSumBST(root->left, low, high) + rangeSumBST(root->right, low, high);
     }
