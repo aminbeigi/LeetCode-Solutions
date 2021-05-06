@@ -20,7 +20,7 @@ struct ListNode* removeNthFromEnd(struct ListNode* head, int n){
         curr = curr->next;
     }
 
-    // two pointer traversal with a distance between of n 
+    // two pointer traversal with distance between of n 
     while (curr) {
         prev = prev->next;
         curr = curr->next;
