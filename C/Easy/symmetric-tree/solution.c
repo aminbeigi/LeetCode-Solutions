@@ -7,13 +7,13 @@ struct TreeNode {
     struct TreeNode *right;
 };
 
-bool doIsSymmetric(struct TreeNode* p, struct TreeNode* q);
+static bool doIsSymmetric(struct TreeNode* p, struct TreeNode* q);
 
 bool isSymmetric(struct TreeNode* root) {
     return doIsSymmetric(root, root);
 }
 
-bool doIsSymmetric(struct TreeNode* p, struct TreeNode* q) {
+static bool doIsSymmetric(struct TreeNode* p, struct TreeNode* q) {
     if (p == NULL || q == NULL) {
         return (p == q);
     }

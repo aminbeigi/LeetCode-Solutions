@@ -6,7 +6,7 @@ struct TreeNode {
     struct TreeNode *right;
 };
 
-void doKthSmallest(struct TreeNode *root, int k, int *nums);
+static void doKthSmallest(struct TreeNode *root, int k, int *nums);
 
 int kthSmallest(struct TreeNode* root, int k) {
     int *nums = calloc(2, sizeof(*nums));
@@ -16,7 +16,7 @@ int kthSmallest(struct TreeNode* root, int k) {
     return kth_index;
 }
 
-void doKthSmallest(struct TreeNode *root, int k, int *nums) {
+static void doKthSmallest(struct TreeNode *root, int k, int *nums) {
     if (!root) return;
 
     doKthSmallest(root->left, k, nums);

@@ -7,14 +7,14 @@ struct TreeNode {
     struct TreeNode *right;
 };
 
-int doSumOfLeftLeaves(struct TreeNode* root, bool isLeft);
+static int doSumOfLeftLeaves(struct TreeNode* root, bool isLeft);
 
 // bool flag solution
 int sumOfLeftLeaves(struct TreeNode* root) {
     return doSumOfLeftLeaves(root, false);
 }
 
-int doSumOfLeftLeaves(struct TreeNode* root, bool isLeft) {
+static int doSumOfLeftLeaves(struct TreeNode* root, bool isLeft) {
     if (root == NULL) return 0;
 
     if (root->left == NULL && root->right == NULL) {
