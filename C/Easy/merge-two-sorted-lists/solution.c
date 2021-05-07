@@ -43,11 +43,11 @@ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2) {
 
 static struct ListNode* createNode(int val) {
     struct ListNode* node = malloc(sizeof(struct ListNode));
-    node->val = val;
-    node->next = NULL;
     if (node == NULL) {
         fprintf(stderr, "Couldn't allocate memory");
         exit(1);
     }
+    node->val = val;
+    node->next = NULL;
     return node;
 }
