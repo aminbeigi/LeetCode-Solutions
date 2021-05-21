@@ -1,5 +1,19 @@
 class Solution:
     def partitionLabels(self, s: str) -> List[int]:
+        rightmost = {c:i for i, c in enumerate(S)}
+        left, right = 0, 0
+    
+        result = []
+        for i, letter in enumerate(S):
+    
+            right = max(right,rightmost[letter])
+        
+            if i == right:
+                result += [right-left + 1]
+                left = i+1
+        return result
+
+    def partitionLabels2(self, s: str) -> List[int]:
         d = {}
         for idx, c in enumerate(s):
             if c not in d:
