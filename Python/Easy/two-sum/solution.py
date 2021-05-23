@@ -1,11 +1,12 @@
 class Solution:
-    # HashMap solution
+    # dictionary solution
     # time complexity: O(n)
     # space complexity: O(n)
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        my_dict = {}
-        for i, number in enumerate(nums):
-            complement = target - number            
-            if (complement in my_dict):
-                return [my_dict[complement], i]            
-            my_dict[number] = i 
+        d = {}
+        for idx, num in enumerate(nums):
+            solution = target-num
+            if solution in d:
+                return [d[solution] ,idx]
+            d[num] = idx 
+        
